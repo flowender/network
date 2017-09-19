@@ -1,0 +1,26 @@
+<html>
+{% include "header.html" %}
+<body>
+{% include "top.html" %}
+<div id="container">
+{% include "menu.html" %}
+<div id="main-content">
+<div id="proj_container">	
+{% for p in projects %}
+<a href="{{url_for('project_details', project_id = p.id)}}" >
+<div class="proj_item" >
+
+<div class="proj_picture">
+<img src="../static/picture/{{p.name}}.png"  class="proj_image" alt=""  >
+</div>
+</div>
+
+</a>
+{% endfor %}
+</div>
+</div>
+{% include "contact.html" %}
+</div>
+
+</body>
+</html>

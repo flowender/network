@@ -1,0 +1,31 @@
+<html>
+{% include "header.html" %}
+<body>
+	{% include "top.html" %}
+	<div id="container">
+{% include "menu.html" %}
+<div id="main-content">
+
+	<div id="introduction">
+	<h2>关于我:</h2>
+	<p>{{ g.Contact['intro'] }}</p>
+	</br>
+	<h2>联系方式:</h2>
+	<p>{{ g.Contact['email'] }}</p>
+	
+	
+	</br>
+	<h2>个人简历:</h2>
+	<a href="{{ url_for("show_resume") }}" >	
+	<div class="resume">
+	<strong>CV</strong>
+	</div>
+	</a>
+	
+	</div>
+
+	</div>
+{% include "contact.html" %}
+</div>
+</body>
+</html>

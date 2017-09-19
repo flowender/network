@@ -1,0 +1,32 @@
+<html>
+{% include "header.html" %}
+<body>
+{% include "top.html" %}
+<div id="container">
+{% include "menu.html" %}
+<div id="main-content">
+
+<div class="passage-single">
+<h2>{{ project.name }}</h2>
+{{ project.intro|safe }}
+</div>
+
+<div id="related_blog">
+<h2>相关博客:</h2>
+<ul>
+{% for b in project.blogs %}
+<a href="{{ url_for('blog', blog_id=b.id)}}" >
+<li>{{ b.title }}</li>
+</a>
+{% endfor %}
+</ul>
+</div>
+
+</div>
+
+{% include "contact.html" %}
+</div>
+
+
+</body>
+</html>

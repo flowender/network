@@ -1,0 +1,23 @@
+<html>
+{% include "header.html" %}
+<body>
+{% include "top.html" %}
+<div id="container">
+{% include "menu.html" %}
+<div id="main-content">
+{% if blog.proj_id %}
+<div id="from_proj">
+	来自:<a href="{{ url_for('project_details', project_id=blog.proj_id) }}">{{ blog.project.name }} </a>
+</div>
+{% endif %}
+<div class="passage-single">
+<h2>{{ blog.title }}</h2>
+{{ blog.content|safe }}
+</div>
+
+</div>
+{% include "contact.html" %}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+{% include "header.html" %}
+<body>
+{% include "top.html" %}
+<div id="container">
+hello
+</div>
+
+</body>
+</html>

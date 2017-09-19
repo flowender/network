@@ -1,0 +1,44 @@
+<html>
+	{% include "header.html" %}
+<body>
+	{% include "top.html" %}
+	<div id="container">
+{% include "menu.html" %}
+
+<div id="main-content">
+
+	{% for b in blogs%}
+	<div class="passage">
+	<div class="pinfo">
+	<a href="{{ url_for('blog',blog_title=b.title) }}" ><h2>{{ b.title }}</h2></a>
+	<div class="time">{{ b.created_time|dateformat }} 阅读（{{b.count}}）</div> 
+	</div>
+	<p>{{ (b.content|safe|_html2text)[0:200] }} ....   <a href="{{ url_for('blog', blog_title = b.title)}}" > 继续阅读</a></p>
+	</div>
+	{% endfor %}
+	
+	
+	 <div id="pagination">
+        {% for p in range(1, pagination) %}
+        	<form action="{{ url_for('blogs_under_category')}}">
+        	<input type="text" name="page" type="hidden" value="{{ p }}" />
+        	<input type="text" name="category" type="hidden" value="category_id" />
+        	<input type="submit"  />
+        	</form>
+         <a {% if page == p %} href="#" 
+         {% else %} 
+          class="active"
+          href="{{ url_for('blogs_under_category', category_id= category_id, page=p) }}" 
+          {% endif %}>
+            {{p}}
+        </a> 
+        {% endfor %}
+    </div>
+
+</div>
+	{% include "contact.html" %}
+
+</div>
+
+</body>
+</html>

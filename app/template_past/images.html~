@@ -1,0 +1,55 @@
+<html>
+	{% include "header.html" %}
+<body>
+<style type="text/css">
+#notice{
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background:url("http://autumn.b0.upaiyun.com/dt/dt{{RANDOM_PIC}}.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+#tohomepage{
+	position: absolute;
+	right: 140px;
+	bottom: 80px;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 20px;
+	background-color:rgba(0, 0, 0, 0.3);
+	border-radius:8px;
+	}
+	
+#tohomepage a{
+color: white;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+	setTimeout("$('#notice').fadeOut(1500, gohomepage)",10000) ;  
+	jQuery('#notice').bind('click',function(){
+		window.location.reload();	
+	});
+});
+function gohomepage(){
+	window.location.href="/";
+}
+</script>
+
+<div id="notice">
+<div id="motto">
+{{ motto }}
+</div>
+</div>
+<div id="tohomepage">
+<a href="{{ url_for('index') }}">
+进入我的博客
+</a>
+</div>
+
+</body>
+</html>
