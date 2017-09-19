@@ -14,7 +14,15 @@ dw = DataWrapper()
 PER_PAGE = 6
 MOTTO = "My life is much more interesting inside my head"
 
-img = "../static/img"
+if os.environ['USER'] == 'wenbin':
+    img = "../static/img"
+    css_url = "../static/css"
+    js_url = "../static/js"
+else:
+    img = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/img"
+    css_url = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/css"
+    js_url = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/js"
+
 #index
 topic = u"与花有关的一切"
 intro = "Flowender Studio"
@@ -173,6 +181,7 @@ def message():
 @app.route('/')
 @app.route('/resume')
 def show_resume():
+    print os.environ['USER']
     return render_template('index.html',
             topic = topic,
             intro = intro,
@@ -187,6 +196,8 @@ def show_resume():
 
             hot_line = hot_line,
   	    img = img,
+	    css_url = css_url,
+	    js_url = js_url,
 
            #resume = RESUME,
            #education = EDUCATION,
