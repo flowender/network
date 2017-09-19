@@ -39,7 +39,7 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <div id="preloader">
-  <div id="status"> <img src="{{ img }}/preloader.gif" height="20" width="160" alt=""> </div>
+  <div id="status"> <img src="../static/img/preloader.gif" height="20" width="160" alt=""> </div>
 </div>
 <!-- Navigation
     ==========================================-->
@@ -122,7 +122,7 @@
 
         {% for i in service_items %}
       <div class="col-md-4 wow fadeInUp">
-        <div class="service-media"> <img src="{{ img }}/services/service-1.jpg" alt=" "> </div>
+        <div class="service-media"> <img src="../static/img/services/service-1.jpg" alt=" "> </div>
         <div class="service-desc">
             <h3>{{ i[0] }} </h3>
           <hr>
@@ -132,7 +132,7 @@
         {% endfor  %}
 
       <div class="col-md-4 wow fadeInUp">
-        <div class="service-media"> <img src="{{ img }}/services/service-1.jpg" alt=" "> </div>
+        <div class="service-media"> <img src="../static/img/services/service-1.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3>Lawn Care</h3>
           <hr>
@@ -141,7 +141,7 @@
       </div>
 
       <div class="col-md-4 wow fadeInUp" data-wow-delay="200ms">
-        <div class="service-media"> <img src="{{ img }}/services/service-2.jpg" alt=" "> </div>
+        <div class="service-media"> <img src="../static/img/services/service-2.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3>Landscape Design</h3>
           <hr>
@@ -149,7 +149,7 @@
         </div>
       </div>
       <div class="col-md-4 wow fadeInUp" data-wow-delay="400ms">
-        <div class="service-media"> <img src="{{ img }}/services/service-3.jpg" alt=" "> </div>
+        <div class="service-media"> <img src="../static/img/services/service-3.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3>Irrigation Design</h3>
           <hr>
@@ -157,7 +157,7 @@
         </div>
       </div>
       <div class="col-md-4 wow fadeInUp" data-wow-delay="600ms">
-        <div class="service-media"> <img src="{{ img }}/services/service-4.jpg" alt=" "> </div>
+        <div class="service-media"> <img src="../static/img/services/service-4.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3>Planting & Removal</h3>
           <hr>
@@ -165,7 +165,7 @@
         </div>
       </div>
       <div class="col-md-4 wow fadeInUp" data-wow-delay="800ms">
-        <div class="service-media"> <img src="{{ img }}/services/service-5.jpg" alt=" "> </div>
+        <div class="service-media"> <img src="../static/img/services/service-5.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3>Tree Care</h3>
           <hr>
@@ -173,7 +173,7 @@
         </div>
       </div>
       <div class="col-md-4 wow fadeInUp" data-wow-delay="1000ms">
-        <div class="service-media"> <img src="{{ img }}/services/service-6.jpg" alt=" "> </div>
+        <div class="service-media"> <img src="../static/img/services/service-6.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3>Spring & Fall Cleanup</h3>
           <hr>
@@ -209,56 +209,56 @@
       <div class="portfolio-items">
         <div class="col-sm-6 col-md-3 col-lg-3 lawn">
           <div class="portfolio-item wow fadeInUp">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Lorem Ipsum</h4>
               </div>
-              <img src="{{ img }}/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 planting">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Adipiscing Elit</h4>
               </div>
-              <img src="{{ img }}/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 lawn">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="400ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Lorem Ipsum</h4>
               </div>
-              <img src="{{ img }}/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 lawn">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="600ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Lorem Ipsum</h4>
               </div>
-              <img src="{{ img }}/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 planting">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="800ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Adipiscing Elit</h4>
               </div>
-              <img src="{{ img }}/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 garden">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="1000ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Dolor Sit</h4>
               </div>
-              <img src="{{ img }}/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 garden">
@@ -267,52 +267,52 @@
               <div class="hover-text">
                 <h4>Dolor Sit</h4>
               </div>
-              <img src="{{ img }}/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 lawn">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="1400ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Lorem Ipsum</h4>
               </div>
-              <img src="{{ img }}/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 planting">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="1600ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Adipiscing Elit</h4>
               </div>
-              <img src="{{ img }}/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 garden">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="1800ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/10-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/10-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Dolor Sit</h4>
               </div>
-              <img src="{{ img }}/portfolio/10-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/10-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 garden">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="2000ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/11-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/11-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Dolor Sit</h4>
               </div>
-              <img src="{{ img }}/portfolio/11-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/11-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 lawn">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="2200ms">
-            <div class="hover-bg"> <a href="{{ img }}/portfolio/12-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="../static/img/portfolio/12-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Lorem Ipsum</h4>
               </div>
-              <img src="{{ img }}/portfolio/12-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="../static/img/portfolio/12-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
       </div>
@@ -368,7 +368,7 @@
 
 
     <div class="section-title text-center">
-<img src="{{ img }}/erweima.jpg" height="160" width="160" alt="">
+<img src="../static/img/erweima.jpg" height="160" width="160" alt="">
       <!--h2 class="wow fadeInLeft">联系我们</h2-->
     </div>
 

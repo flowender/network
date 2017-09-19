@@ -14,6 +14,7 @@ dw = DataWrapper()
 PER_PAGE = 6
 MOTTO = "My life is much more interesting inside my head"
 
+img = "../static/img"
 #index
 topic = u"与花有关的一切"
 intro = "Flowender Studio"
@@ -185,6 +186,7 @@ def show_resume():
             gallery_intro = gallery_intro,
 
             hot_line = hot_line,
+  	    img = img,
 
            #resume = RESUME,
            #education = EDUCATION,
