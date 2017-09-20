@@ -14,7 +14,7 @@ dw = DataWrapper()
 PER_PAGE = 6
 MOTTO = "My life is much more interesting inside my head"
 
-if os.environ['USER'] == 'wenbin':
+if 'wenbin' in os.environ:
     img = "../static/img"
     css_url = "../static/css"
     js_url = "../static/js"
@@ -181,7 +181,6 @@ def message():
 @app.route('/')
 @app.route('/resume')
 def show_resume():
-    print os.environ['USER']
     return render_template('index.html',
             topic = topic,
             intro = intro,
