@@ -25,7 +25,7 @@ else:
     js_url = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/js"
 
 #index
-topic = u"与花有关的一切"
+topic = u"Comming soon..."
 intro = "Flowender Studio"
 intro_2 = u"我们为您的生活，派对，婚礼，商务空间提供花艺设计及周边服务"
 
