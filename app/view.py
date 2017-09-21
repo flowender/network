@@ -14,15 +14,14 @@ dw = DataWrapper()
 PER_PAGE = 6
 MOTTO = "My life is much more interesting inside my head"
 
-#if "wenbin" in os.environ.get("LOGNAME"):
-if "flowender_test_version" in os.environ["SUPERVISOR_PROCESS_NAME"]:
-    img = "../static/img"
-    css_url = "../static/css"
-    js_url = "../static/js"
-else:
+if os.environ.has_key("SUPERVISOR_PROCESS_NAME") and os.environ["SUPERVISOR_PROCESS_NAME"] == 'wenbin':
     img = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/img"
     css_url = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/css"
     js_url = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/js"
+else:
+    img = "../static/img"
+    css_url = "../static/css"
+    js_url = "../static/js"
 
 #index
 topic = u"Comming soon..."
