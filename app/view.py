@@ -14,7 +14,10 @@ dw = DataWrapper()
 PER_PAGE = 6
 MOTTO = "My life is much more interesting inside my head"
 
-if os.environ.has_key("SUPERVISOR_PROCESS_NAME") and os.environ["SUPERVISOR_PROCESS_NAME"] == 'wenbin':
+#if  os.environ.has_key("SUPERVISOR_PROCESS_NAME") and os.environ["SUPERVISOR_PROCESS_NAME"] == 'wenbin':
+USE_OSS_PICTURE = True
+
+if USE_OSS_PICTURE:
     img = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/img"
     css_url = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/css"
     js_url = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/js"
@@ -23,8 +26,13 @@ else:
     css_url = "../static/css"
     js_url = "../static/js"
 
+#gift = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/git/" + str(i) +".jpg?x-oss-process=image/resize,m_fill,h_213,w_340"for i in range(1,4) ]
+gift = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/gift/" + str(i) +".jpg" for i in range(1,4) ]
+marry = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/marry/" + str(i) +".jpg" for i in range(1,4)]
+party = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/party/" + str(i) +".jpg" for i in range(1,4)]
+
 #index
-topic = u"Comming soon..."
+topic = u"Coming soon..."
 intro = "Flowender Studio"
 intro_2 = u"我们为您的生活，派对，婚礼，商务空间提供花艺设计及周边服务"
 
@@ -198,6 +206,9 @@ def show_resume():
 	    css_url = css_url,
 	    js_url = js_url,
 
+	    gift = gift,
+	    marry = marry,
+            party = party,
            #resume = RESUME,
            #education = EDUCATION,
            )
