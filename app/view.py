@@ -14,7 +14,8 @@ dw = DataWrapper()
 PER_PAGE = 6
 MOTTO = "My life is much more interesting inside my head"
 
-if 'wenbin' in os.environ:
+#if "wenbin" in os.environ.get("LOGNAME"):
+if "flowender_test_version" in os.environ["SUPERVISOR_PROCESS_NAME"]:
     img = "../static/img"
     css_url = "../static/css"
     js_url = "../static/js"
