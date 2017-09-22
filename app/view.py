@@ -12,7 +12,6 @@ from resume import RESUME, EDUCATION
 dw = DataWrapper()
 
 PER_PAGE = 6
-MOTTO = "My life is much more interesting inside my head"
 
 #if  os.environ.has_key("SUPERVISOR_PROCESS_NAME") and os.environ["SUPERVISOR_PROCESS_NAME"] == 'wenbin':
 USE_OSS_PICTURE = True

@@ -178,13 +178,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/ccc.jpg) top center no-repeat;
-	/*background: url("http://flowender-oss.oss-cn-shanghai.aliyuncs.com/1.jpg") top center no-repeat;*/
+	/*background: url("http://flowender-oss.oss-cn-shanghai.aliyuncs.com/1.jpg") top center no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	-o-background-size: cover;
+	-o-background-size: cover;*/
 }
 .intro .overlay {
 	background: rgba(0,0,0,0.2);
