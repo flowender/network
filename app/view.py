@@ -14,21 +14,25 @@ dw = DataWrapper()
 PER_PAGE = 6
 
 #if  os.environ.has_key("SUPERVISOR_PROCESS_NAME") and os.environ["SUPERVISOR_PROCESS_NAME"] == 'wenbin':
-USE_OSS_PICTURE = True
+#    USE_OSS_PICTURE = True
+#else:
+#    USE_OSS_PICTURE = False
 
+USE_OSS_PICTURE = False
 if USE_OSS_PICTURE:
     img = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/img"
     css_url = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/css"
     js_url = "http://flowender-oss.oss-cn-shanghai.aliyuncs.com/static/js"
+    gift = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/gift/" + str(i) +".jpg" for i in range(1,4) ]
+    marry = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/marry/" + str(i) +".jpg" for i in range(1,4)]
+    party = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/party/" + str(i) +".jpg" for i in range(1,4)]
 else:
     img = "../static/img"
     css_url = "../static/css"
     js_url = "../static/js"
-
-#gift = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/git/" + str(i) +".jpg?x-oss-process=image/resize,m_fill,h_213,w_340"for i in range(1,4) ]
-gift = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/gift/" + str(i) +".jpg" for i in range(1,4) ]
-marry = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/marry/" + str(i) +".jpg" for i in range(1,4)]
-party = ["http://flowender-oss.oss-cn-shanghai.aliyuncs.com/party/" + str(i) +".jpg" for i in range(1,4)]
+    gift = ["../static/img/gift/" + str(i) +".jpg" for i in range(1,4) ]
+    marry = ["../static/img/marry/" + str(i) +".jpg" for i in range(1,4)]
+    party = ["../static/img/party/" + str(i) +".jpg" for i in range(1,4)]
 
 #index
 topic = u"Coming soon..."
